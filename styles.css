@@ -938,6 +938,7 @@ a {
 
 .page-soc svg   { width: 23px; height: 23px; }
 .page-soc .marketplace-icon { width: 32px; height: 32px; color: #fff; }
+.page-soc .email-icon { width: 32px; height: 32px; color: #fff; }
 .page-soc-emoji { font-size: 1.22rem; line-height: 1; }
 
 .psoc-ig  { background: linear-gradient(135deg, #f9446a, #d01c70); }
@@ -963,6 +964,20 @@ a {
 }
 
 .btn-li { background: #0077b5; }
+.email-button { gap: 7px; }
+.whatsapp-button { gap: 7px; }
+.button-email-icon {
+  width: 23px;
+  height: 23px;
+  flex: 0 0 auto;
+  color: #fff;
+}
+.button-whatsapp-icon {
+  width: 21px;
+  height: 21px;
+  flex: 0 0 auto;
+  color: #fff;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
