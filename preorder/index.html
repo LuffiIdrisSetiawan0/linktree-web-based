@@ -188,7 +188,9 @@
         <p>Tanya deadline, stok, maklon, atau kebutuhan sourcing Anda.</p>
         <a
           class="wa-button"
-          href="https://wa.me/628170099222?text=Halo%20Tania%2C%20saya%20mau%20konsultasi%20preorder%20Lamonte"
+          href="https://web.whatsapp.com/send?phone=628170099222&text=Halo%20Tania%2C%20saya%20mau%20konsultasi%20preorder%20Lamonte"
+          data-wa-phone="628170099222"
+          data-wa-text="Halo Tania, saya mau konsultasi preorder Lamonte"
           target="_blank"
           rel="noopener"
         >
@@ -240,7 +242,9 @@
             </svg>
           </a>
           <a
-            href="https://wa.me/628170099222?text=Halo%20Tania%2C%20saya%20mau%20tanya%20preorder%20Lamonte"
+            href="https://web.whatsapp.com/send?phone=628170099222&text=Halo%20Tania%2C%20saya%20mau%20tanya%20preorder%20Lamonte"
+            data-wa-phone="628170099222"
+            data-wa-text="Halo Tania, saya mau tanya preorder Lamonte"
             class="page-soc psoc-wa"
             target="_blank"
             rel="noopener"
@@ -286,5 +290,18 @@
         <p class="footer-copy">© 2025 Lamonte</p>
       </footer>
     </main>
+    <script>
+      document.querySelectorAll("[data-wa-phone]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const phone = link.dataset.waPhone;
+          const text = encodeURIComponent(link.dataset.waText || "");
+          event.preventDefault();
+          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
+          setTimeout(() => {
+            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
+          }, 700);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -260,7 +260,9 @@
             </svg>
           </a>
           <a
-            href="https://wa.me/62811819921?text=Halo%20Customer%20Care%20Lamonte%2C%20saya%20mau%20bertanya"
+            href="https://web.whatsapp.com/send?phone=62811819921&text=Halo%20Customer%20Care%20Lamonte%2C%20saya%20mau%20bertanya"
+            data-wa-phone="62811819921"
+            data-wa-text="Halo Customer Care Lamonte, saya mau bertanya"
             class="soc soc-wa"
             id="soc-wa"
             target="_blank"
@@ -285,5 +287,18 @@
         <p class="footer-copy">© 2025 Lamonte</p>
       </footer>
     </main>
+    <script>
+      document.querySelectorAll("[data-wa-phone]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const phone = link.dataset.waPhone;
+          const text = encodeURIComponent(link.dataset.waText || "");
+          event.preventDefault();
+          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
+          setTimeout(() => {
+            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
+          }, 700);
+        });
+      });
+    </script>
   </body>
 </html>

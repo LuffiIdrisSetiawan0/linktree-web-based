@@ -211,7 +211,9 @@
 
         <a
           class="link-card b2b-edu"
-          href="https://wa.me/6281290279222?text=Hi%20Nova%2C%20I%20would%20like%20to%20get%20a%20Lamonte%20Global%20quotation"
+          href="https://web.whatsapp.com/send?phone=6281290279222&text=Hi%20Nova%2C%20I%20would%20like%20to%20get%20a%20Lamonte%20Global%20quotation"
+          data-wa-phone="6281290279222"
+          data-wa-text="Hi Nova, I would like to get a Lamonte Global quotation"
           target="_blank"
           rel="noopener"
         >
@@ -241,7 +243,9 @@
           </a>
           <a
             class="wa-button"
-            href="https://wa.me/6281290279222?text=Hi%20Nova%2C%20I%20would%20like%20to%20discuss%20Lamonte%20Global"
+            href="https://web.whatsapp.com/send?phone=6281290279222&text=Hi%20Nova%2C%20I%20would%20like%20to%20discuss%20Lamonte%20Global"
+            data-wa-phone="6281290279222"
+            data-wa-text="Hi Nova, I would like to discuss Lamonte Global"
             target="_blank"
             rel="noopener"
             aria-label="WhatsApp global team"
@@ -338,7 +342,9 @@
             </svg>
           </a>
           <a
-            href="https://wa.me/6281290279222?text=Hi%20Nova%2C%20I%20would%20like%20to%20discuss%20Lamonte%20Global"
+            href="https://web.whatsapp.com/send?phone=6281290279222&text=Hi%20Nova%2C%20I%20would%20like%20to%20discuss%20Lamonte%20Global"
+            data-wa-phone="6281290279222"
+            data-wa-text="Hi Nova, I would like to discuss Lamonte Global"
             class="page-soc psoc-wa"
             target="_blank"
             rel="noopener"
@@ -362,5 +368,18 @@
         <p class="footer-copy">© 2025 Lamonte</p>
       </footer>
     </main>
+    <script>
+      document.querySelectorAll("[data-wa-phone]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const phone = link.dataset.waPhone;
+          const text = encodeURIComponent(link.dataset.waText || "");
+          event.preventDefault();
+          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
+          setTimeout(() => {
+            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
+          }, 700);
+        });
+      });
+    </script>
   </body>
 </html>

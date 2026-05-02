@@ -159,7 +159,9 @@
         <h2 id="wa-title">💬 Butuh Bantuan Belanja?</h2>
         <a
           class="wa-button"
-          href="https://wa.me/6282111135519?text=Halo%20Putri%2C%20saya%20mau%20beli%20produk%20Lamonte"
+          href="https://web.whatsapp.com/send?phone=6282111135519&text=Halo%20Putri%2C%20saya%20mau%20beli%20produk%20Lamonte"
+          data-wa-phone="6282111135519"
+          data-wa-text="Halo Putri, saya mau beli produk Lamonte"
           target="_blank"
           rel="noopener"
         >
@@ -253,7 +255,9 @@
             </svg>
           </a>
           <a
-            href="https://wa.me/6282111135519?text=Halo%20Putri%2C%20saya%20mau%20beli%20produk%20Lamonte"
+            href="https://web.whatsapp.com/send?phone=6282111135519&text=Halo%20Putri%2C%20saya%20mau%20beli%20produk%20Lamonte"
+            data-wa-phone="6282111135519"
+            data-wa-text="Halo Putri, saya mau beli produk Lamonte"
             class="page-soc psoc-wa"
             target="_blank"
             rel="noopener"
@@ -298,5 +302,18 @@
         <p class="footer-copy">© 2025 Lamonte</p>
       </footer>
     </main>
+    <script>
+      document.querySelectorAll("[data-wa-phone]").forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const phone = link.dataset.waPhone;
+          const text = encodeURIComponent(link.dataset.waText || "");
+          event.preventDefault();
+          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
+          setTimeout(() => {
+            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
+          }, 700);
+        });
+      });
+    </script>
   </body>
 </html>
