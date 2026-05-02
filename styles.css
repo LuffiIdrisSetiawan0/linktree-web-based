@@ -319,7 +319,6 @@ a {
 .arrow svg {
   width: 20px;
   height: 20px;
-  color: var(--deep-orange);
   transition: color 0.18s ease;
 }
 
@@ -525,7 +524,6 @@ a {
 .shop-nav-arrow svg {
   width: 20px;
   height: 20px;
-  color: var(--deep-orange);
   transition: color 0.18s ease;
 }
 
