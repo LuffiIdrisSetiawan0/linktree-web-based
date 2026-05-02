@@ -188,7 +188,7 @@
         <p>Tanya deadline, stok, maklon, atau kebutuhan sourcing Anda.</p>
         <a
           class="wa-button"
-          href="https://web.whatsapp.com/send?phone=628170099222&text=Halo%20Tania%2C%20saya%20mau%20konsultasi%20preorder%20Lamonte"
+          href="https://wa.me/628170099222?text=Halo%20Tania%2C%20saya%20mau%20konsultasi%20preorder%20Lamonte"
           data-wa-phone="628170099222"
           data-wa-text="Halo Tania, saya mau konsultasi preorder Lamonte"
           target="_blank"
@@ -242,7 +242,7 @@
             </svg>
           </a>
           <a
-            href="https://web.whatsapp.com/send?phone=628170099222&text=Halo%20Tania%2C%20saya%20mau%20tanya%20preorder%20Lamonte"
+            href="https://wa.me/628170099222?text=Halo%20Tania%2C%20saya%20mau%20tanya%20preorder%20Lamonte"
             data-wa-phone="628170099222"
             data-wa-text="Halo Tania, saya mau tanya preorder Lamonte"
             class="page-soc psoc-wa"
@@ -296,10 +296,7 @@
           const phone = link.dataset.waPhone;
           const text = encodeURIComponent(link.dataset.waText || "");
           event.preventDefault();
-          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
-          setTimeout(() => {
-            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
-          }, 700);
+          window.location.href = `https://wa.me/${phone}?text=${text}`;
         });
       });
     </script>

@@ -260,7 +260,7 @@
         <h2 id="wa-b2b-title">📲 Konsultasikan Rencana Bisnis Anda</h2>
         <a
           class="wa-button"
-          href="https://web.whatsapp.com/send?phone=628111189921&text=Halo%20Mona%2C%20saya%20mau%20konsultasi%20bisnis%20bersama%20Lamonte"
+          href="https://wa.me/628111189921?text=Halo%20Mona%2C%20saya%20mau%20konsultasi%20bisnis%20bersama%20Lamonte"
           data-wa-phone="628111189921"
           data-wa-text="Halo Mona, saya mau konsultasi bisnis bersama Lamonte"
           target="_blank"
@@ -336,7 +336,7 @@
             </svg>
           </a>
           <a
-            href="https://web.whatsapp.com/send?phone=628111189921&text=Halo%20Mona%2C%20saya%20mau%20konsultasi%20bisnis%20Lamonte"
+            href="https://wa.me/628111189921?text=Halo%20Mona%2C%20saya%20mau%20konsultasi%20bisnis%20Lamonte"
             data-wa-phone="628111189921"
             data-wa-text="Halo Mona, saya mau konsultasi bisnis Lamonte"
             class="page-soc psoc-wa"
@@ -367,10 +367,7 @@
           const phone = link.dataset.waPhone;
           const text = encodeURIComponent(link.dataset.waText || "");
           event.preventDefault();
-          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
-          setTimeout(() => {
-            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
-          }, 700);
+          window.location.href = `https://wa.me/${phone}?text=${text}`;
         });
       });
     </script>

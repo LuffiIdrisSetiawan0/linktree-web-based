@@ -260,7 +260,7 @@
             </svg>
           </a>
           <a
-            href="https://web.whatsapp.com/send?phone=62811819921&text=Halo%20Customer%20Care%20Lamonte%2C%20saya%20mau%20bertanya"
+            href="https://wa.me/62811819921?text=Halo%20Customer%20Care%20Lamonte%2C%20saya%20mau%20bertanya"
             data-wa-phone="62811819921"
             data-wa-text="Halo Customer Care Lamonte, saya mau bertanya"
             class="soc soc-wa"
@@ -293,10 +293,7 @@
           const phone = link.dataset.waPhone;
           const text = encodeURIComponent(link.dataset.waText || "");
           event.preventDefault();
-          window.location.href = `whatsapp://send?phone=${phone}&text=${text}`;
-          setTimeout(() => {
-            window.location.href = `https://web.whatsapp.com/send?phone=${phone}&text=${text}`;
-          }, 700);
+          window.location.href = `https://wa.me/${phone}?text=${text}`;
         });
       });
     </script>
