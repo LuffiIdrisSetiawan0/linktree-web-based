@@ -1,117 +1,288 @@
 <!doctype html>
 <html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Lamonte link hub untuk belanja, bisnis, koleksi, global, dan preorder fashion anak."
-    >
-    <title>Lamonte | Fashion Anak</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      content="Lamonte – fashion anak, partnership, manufacturing, dan supply chain dalam satu ekosistem terbaik Indonesia."
+    />
+    <title>Lamonte | Fashion Anak Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,600&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="styles.css">
+    />
+    <link rel="stylesheet" href="home.css?v=7" />
   </head>
   <body>
-    <main class="page-card" aria-labelledby="page-title">
-      <section class="hero">
-        <div class="logo-block">
-          <div class="heart" aria-hidden="true">&hearts;</div>
-          <h1 id="page-title" class="logo-title">
-            <img src="assets/0-3-900x270.webp" alt="LAMONTE">
-          </h1>
-          <p class="tagline">LOVE &middot; QUALITY &middot; STYLE</p>
-          <p class="intro">
-            Lamonte menghadirkan pakaian anak yang nyaman, bergaya, dan dibuat
-            dengan cinta untuk setiap langkah mereka.
-          </p>
+    <main class="shell">
+      <!-- ═══ HEADER ═══ -->
+      <header class="hdr">
+        <span class="hdr-heart" aria-hidden="true">♥</span>
+        <img src="assets/0-3-900x270.webp" alt="Lamonte" class="logo-img" />
+        <p class="tagline">LOVE &middot; QUALITY &middot; STYLE</p>
+        <p class="intro">
+          Lamonte menghadirkan pakaian anak yang nyaman, bergaya, dan dibuat
+          dengan cinta untuk setiap langkah mereka.
+        </p>
+        <div class="dot-strip" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
+      </header>
 
+      <!-- ═══ HERO ═══ -->
+      <section class="hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
-          src="assets/lamonte-hero.png"
-          alt="Flat lay pakaian anak Lamonte dengan overall denim, atasan rajut, kardigan, daun, dan mainan kayu"
-        >
+          src="assets/kid-fashion-hero.png"
+          alt="Ilustrasi anak dengan fashion Lamonte"
+          onerror="this.src = 'assets/kids-hero.png'"
+        />
       </section>
 
-      <section class="link-list" aria-label="Navigasi Lamonte">
-        <a class="link-card shop" href="shop/">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img">
-              <path d="M7 9V7a5 5 0 0 1 10 0v2" />
-              <path d="M5.4 8.5h13.2l-1 10.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8L5.4 8.5Z" />
-            </svg>
-          </span>
-          <span class="link-copy">
-            <strong>Shop <small>(B2C)</small></strong>
-            <em>Belanja koleksi pilihan untuk si kecil tercinta.</em>
-          </span>
-          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+      <!-- ═══ NAVIGATION CARDS ═══ -->
+      <section class="nav-cards" aria-label="Navigasi Lamonte">
+        <!-- 1 — Shop -->
+        <a href="shop/" class="nav-card" id="nav-shop">
+          <div class="nav-card-photo">
+            <img
+              src="assets/nav-shop.png"
+              alt="Belanja produk fashion anak Lamonte"
+            />
+          </div>
+          <div class="nav-card-info">
+            <h2>Shop</h2>
+            <p>Belanja koleksi fashion anak nyaman & terjangkau</p>
+          </div>
+          <span class="nav-arrow" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" /></svg
+          ></span>
         </a>
 
-        <a class="link-card business" href="https://info.lamonte.id/business">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img">
-              <path d="M4 7.5h16v10H4z" />
-              <path d="M7 11h10M7 14h6" />
-            </svg>
-          </span>
-          <span class="link-copy">
-            <strong>Business <small>(B2B)</small></strong>
-            <em>Bermitra bersama Lamonte untuk peluang bisnis.</em>
-          </span>
-          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        <!-- 2 — Business -->
+        <a href="business/" class="nav-card" id="nav-business">
+          <div class="nav-card-photo">
+            <img
+              src="assets/nav-business.png"
+              alt="Partnership dan bisnis bersama Lamonte"
+            />
+          </div>
+          <div class="nav-card-info">
+            <h2>Business</h2>
+            <p>Jadi partner, manufacturing, supply chain & lebih</p>
+          </div>
+          <span class="nav-arrow" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" /></svg
+          ></span>
         </a>
 
-        <a class="link-card global" href="https://info.lamonte.id/global">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img">
-              <circle cx="12" cy="12" r="8" />
-              <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
-            </svg>
-          </span>
-          <span class="link-copy">
-            <strong>Global</strong>
-            <em>Pengiriman ke berbagai negara dengan mudah.</em>
-          </span>
-          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        <!-- 3 — Global -->
+        <a href="global/" class="nav-card" id="nav-global">
+          <div class="nav-card-photo">
+            <img
+              src="assets/nav-global.png"
+              alt="Lamonte global trade dan ekspor"
+            />
+          </div>
+          <div class="nav-card-info">
+            <h2>Global</h2>
+            <p>Ekspansi internasional & global trade Lamonte</p>
+          </div>
+          <span class="nav-arrow" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" /></svg
+          ></span>
         </a>
 
-        <a class="link-card collection" href="https://info.lamonte.id/collection">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img">
-              <path d="M9 4h6l1.5 3.5L20 9l-2.2 3.1V20H6.2v-7.9L4 9l3.5-1.5L9 4Z" />
-              <path d="M9 4c.6 1.4 1.6 2.1 3 2.1S14.4 5.4 15 4" />
-            </svg>
-          </span>
-          <span class="link-copy">
-            <strong>Collection</strong>
-            <em>Jelajahi koleksi terbaru dan favorit kami.</em>
-          </span>
-          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        <!-- 4 — Collection -->
+        <a href="collection/" class="nav-card" id="nav-collection">
+          <div class="nav-card-photo">
+            <img
+              src="assets/nav-collection.png"
+              alt="Koleksi fashion terbaru anak-anak"
+            />
+          </div>
+          <div class="nav-card-info">
+            <h2>Collection</h2>
+            <p>Lookbook & koleksi fashion terbaru anak Lamonte</p>
+          </div>
+          <span class="nav-arrow" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" /></svg
+          ></span>
         </a>
 
-        <a class="link-card preorder" href="https://info.lamonte.id/preorder">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" role="img">
-              <path d="M7 4h10M7 20h10M8 4c0 4 8 4.2 8 8s-8 4-8 8M16 4c0 4-8 4.2-8 8s8 4 8 8" />
-            </svg>
-          </span>
-          <span class="link-copy">
-            <strong>Preorder</strong>
-            <em>Pesan lebih awal produk pilihan sebelum tersedia.</em>
-          </span>
-          <span class="arrow" aria-hidden="true">&rsaquo;</span>
+        <!-- 5 — Preorder -->
+        <a href="preorder/" class="nav-card" id="nav-preorder">
+          <div class="nav-card-photo">
+            <img
+              src="assets/nav-preorder.png"
+              alt="Preorder produk terbaru Lamonte"
+            />
+          </div>
+          <div class="nav-card-info">
+            <h2>Preorder</h2>
+            <p>Pesan lebih awal untuk produk eksklusif terbaru</p>
+          </div>
+          <span class="nav-arrow" aria-hidden="true"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" /></svg
+          ></span>
         </a>
       </section>
 
-      <footer class="site-footer">
-        <div class="footer-mark" aria-hidden="true">&hearts;</div>
-        <p>Dibuat dengan cinta,<br>untuk masa kecil yang berharga.</p>
+      <!-- ═══ SOCIAL ═══ -->
+      <section class="social" aria-label="Ikuti Lamonte">
+        <h2 class="social-title">👋 Ikuti Lamonte</h2>
+        <div class="social-row">
+          <a
+            href="https://instagram.com/lamonte.id"
+            class="soc soc-ig"
+            id="soc-ig"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5.5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1.1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://tiktok.com/@lamonte.id"
+            class="soc soc-tt"
+            id="soc-tt"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.69a8.22 8.22 0 0 0 4.82 1.55V6.78a4.85 4.85 0 0 1-1.06-.09z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com/lamonte.id"
+            class="soc soc-fb"
+            id="soc-fb"
+            target="_blank"
+            rel="noopener"
+            aria-label="Facebook"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.027 4.388 11.024 10.125 11.927v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.885v2.27h3.328l-.532 3.49h-2.796v8.437C19.612 23.097 24 18.1 24 12.073z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://youtube.com/@lamonte.id"
+            class="soc soc-yt"
+            id="soc-yt"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://shopee.co.id/lamonte"
+            class="soc soc-mp"
+            id="soc-mp"
+            target="_blank"
+            rel="noopener"
+            aria-label="Marketplace"
+          >
+            <svg class="marketplace-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M11 17h26l-2.1 22.2A4.2 4.2 0 0 1 30.7 43H17.3a4.2 4.2 0 0 1-4.2-3.8L11 17Z" fill="currentColor" />
+              <path d="M17 17v-2.8C17 9.1 20.1 5 24 5s7 4.1 7 9.2V17" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" />
+              <path d="M14.2 17h19.6l-3.2 5.2H11L14.2 17Z" fill="currentColor" opacity=".78" />
+              <path d="M19 29h10" stroke="#f97316" stroke-width="3.2" stroke-linecap="round" />
+              <path d="M19 34h7" stroke="#f97316" stroke-width="3.2" stroke-linecap="round" />
+            </svg>
+          </a>
+          <a
+            href="https://wa.me/6281234567890"
+            class="soc soc-wa"
+            id="soc-wa"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ═══ FOOTER ═══ -->
+      <footer class="footer">
+        <p class="footer-hearts" aria-hidden="true">♥ &nbsp; ♥ &nbsp; ♥</p>
+        <p class="footer-quote">
+          Dibuat dengan cinta, <em>untuk masa kecil yang berharga.</em>
+        </p>
+        <p class="footer-copy">© 2025 Lamonte</p>
       </footer>
     </main>
   </body>
