@@ -312,12 +312,15 @@ a {
   border-radius: 50%;
   color: var(--deep-orange);
   background: linear-gradient(135deg, #ffe8c8, #ffd4a0);
-  font-family: Arial, sans-serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  line-height: 0;
   box-shadow: 0 2px 6px rgba(82, 55, 20, 0.1);
   transition: background 0.2s ease, color 0.18s ease, transform 0.2s ease;
+}
+
+.arrow svg {
+  width: 20px;
+  height: 20px;
+  color: var(--deep-orange);
+  transition: color 0.18s ease;
 }
 
 .link-card:hover .arrow,
@@ -515,12 +518,15 @@ a {
   border-radius: 50%;
   color: var(--deep-orange);
   background: linear-gradient(135deg, #ffe8c8, #ffd4a0);
-  font-family: Arial, sans-serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  line-height: 0;
   box-shadow: 0 2px 6px rgba(82, 55, 20, 0.1);
   transition: background 0.2s ease, color 0.18s ease, transform 0.2s ease;
+}
+
+.shop-nav-arrow svg {
+  width: 20px;
+  height: 20px;
+  color: var(--deep-orange);
+  transition: color 0.18s ease;
 }
 
 .shop-nav-card:hover .shop-nav-arrow,
