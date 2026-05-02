@@ -159,10 +159,10 @@ body::before {
   display: block;
   width: calc(100% + 44px);
   max-width: none;
-  height: 300px;
+  height: auto;
   margin: 16px -22px 0;
-  object-fit: cover;
-  object-position: 50% 20%;
+  object-fit: contain;
+  object-position: center;
   filter: saturate(0.97) contrast(0.98);
 }
 
@@ -400,7 +400,7 @@ body::before {
 }
 @media (max-width: 380px) {
   .shell { width: min(100% - 8px, 430px); margin: 4px auto; border-radius: 12px; }
-  .hero-image { width: calc(100% + 24px); height: 252px; margin-inline: -12px; }
+  .hero-image { width: calc(100% + 24px); height: auto; margin-inline: -12px; }
   .hero-h1 { font-size: 1.35rem; }
   .nav-card-photo { width: 74px; min-height: 74px; }
   .nav-card-info { padding: 12px 12px; }
