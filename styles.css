@@ -1003,11 +1003,13 @@ a {
   }
 }
 
-.hdr-heart { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .05s both; }
-.logo-img  { animation: fade-up .45s cubic-bezier(.22,1,.36,1) .12s both; }
-.tagline   { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .18s both; }
-.intro     { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .24s both; }
-.dot-strip { animation: fade-up .35s cubic-bezier(.22,1,.36,1) .30s both; }
+.back-link             { animation: fade-up .35s cubic-bezier(.22,1,.36,1) .02s both; }
+.hdr-heart             { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .05s both; }
+.logo-img              { animation: fade-up .45s cubic-bezier(.22,1,.36,1) .12s both; }
+.tagline               { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .18s both; }
+.hdr h1                { animation: fade-up .45s cubic-bezier(.22,1,.36,1) .22s both; }
+.hdr p:not(.tagline)   { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .27s both; }
+.dot-strip             { animation: fade-up .35s cubic-bezier(.22,1,.36,1) .30s both; }
 
 .hero-image { animation: hero-rise .85s cubic-bezier(.22,1,.36,1) .35s both; }
 

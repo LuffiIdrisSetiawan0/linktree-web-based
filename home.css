@@ -415,7 +415,8 @@ body::before {
 .hdr-heart { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .05s both; }
 .logo-img  { animation: fade-up .45s cubic-bezier(.22,1,.36,1) .12s both; }
 .tagline   { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .18s both; }
-.pill      { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .22s both; }
+.intro     { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .23s both; }
+.pill      { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .23s both; }
 .hero-h1   { animation: fade-up .45s cubic-bezier(.22,1,.36,1) .26s both; }
 .hero-p    { animation: fade-up .40s cubic-bezier(.22,1,.36,1) .30s both; }
 .dot-strip { animation: fade-up .35s cubic-bezier(.22,1,.36,1) .34s both; }
